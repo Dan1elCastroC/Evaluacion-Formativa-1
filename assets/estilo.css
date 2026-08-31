@@ -1,0 +1,98 @@
+/* =========================================
+   Archivo: assets/estilo.css
+   Proyecto: Tienda Guau&Miau
+========================================= */
+
+/* Estilos generales del cuerpo */
+body {
+    background-color: #f4f6f8; /* Un fondo ligeramente gris para contrastar con el formulario blanco */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Tipografía y espaciado del Header */
+header h1 {
+    letter-spacing: 1px;
+}
+
+/* Estilos de la tarjeta principal (Formulario) */
+.card {
+    border: 1px solid #ced4da;
+    border-radius: 0px; /* Bordes cuadrados para simular el mockup */
+}
+
+/* Cabecera del formulario "Registro de usuario" */
+.card-header {
+    background-color: #d8d8d8 !important; /* Gris intermedio según el mockup */
+    color: #333 !important;
+    border-bottom: 1px solid #ced4da;
+    padding: 15px;
+}
+
+/* Etiquetas (Labels) de los inputs */
+.form-label {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #555;
+    text-transform: uppercase;
+    margin-bottom: 0.2rem;
+}
+
+/* Inputs de texto y selectores */
+.form-control, .form-select {
+    border-radius: 0px;
+    border: 1px solid #000; /* Borde negro marcado como en el diseño */
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #333;
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
+}
+
+/* Contenedor dinámico de Registro de Mascotas */
+.mascota-item {
+    background-color: #ffffff;
+    border: 2px solid #333 !important; /* Borde oscuro para resaltar el cuadro de la mascota */
+    border-radius: 0px;
+    position: relative;
+}
+
+/* Estilos de los Botones */
+.btn-dark {
+    border-radius: 0px;
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+
+.btn-outline-dark {
+    border-radius: 0px;
+    border: 2px solid #000;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-dark:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.btn-danger {
+    border-radius: 0px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+}
+
+.btn-danger:hover {
+    background-color: #dc3545;
+    color: #fff;
+    border-color: #dc3545;
+}
+
+/* Pie de página */
+.custom-footer {
+    font-size: 0.85rem;
+    color: #6c757d;
+}

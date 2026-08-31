@@ -13,30 +13,62 @@
     <link rel="stylesheet" href="assets/estilo.css" />
 </head>
 
-<header>
-    <div class="container mt-3">
-        <h1 style="text-align: center; color: #333; background-color: #080808; padding: 10px; padding-left: 200px;"></h1>
-    </div>
-</header>
+
 
 <body>
-    <div class="container mt-3">
-        <h1 style="text-align: center; font-family: 'Arial', sans-serif; color: #333;"> Tienda GuauMiau</h1>
+    <header class="bg-light py-3 border-bottom">
+        <div class="container d-flex justify-content-between align-items-center">
+            <nav>
+                <a href="index.html" class="text-decoration-none fw-bold">HOME</a>
+            </nav>
+            <h1 class="m-0" style="font-family: 'Arial', sans-serif; color: #333;">GUAU&MIAU</h1>
+            <button class="btn btn-dark">INICIAR SESIÓN</button>
+        </div>
+</header>
 
-    </div>
+    <main class="container mt-4 text-center">
+        <div class="container mt-3">
+            <section class="text-center">
+                <h2 class="mb-4" style="font-family: 'Arial', sans-serif; color: #333;">¡Bienvenido a GUAU&MIAU!</h2>
+                <p class="mb-4" style="font-family: 'Arial', sans-serif; color: #555;">Encuentra todo lo que necesitas para tus mascotas en un solo lugar.</p>
+                <a href="productos.html" class="btn btn-primary">Ver Productos</a>
+                <article class="mt-5">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label" style="font-family: 'Arial', sans-serif; color: #333;">Nombre:</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label" style="font-family: 'Arial', sans-serif; color: #333;">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Ingresa tu email">
+                        </div>
 
-    <!-- Menú principal usando el componente de Bootstrap -->
-    <nav class="navbar navbar-expand-lg custom-navbar"></nav>
+                        <div class="mb-3">
+                            <label for="contraseña" class="form-label" style="font-family: 'Arial', sans-serif; color: #333;">Contraseña:</label>
+                            <input type="password" class="form-control" id="contraseña" placeholder="Ingresa tu contraseña">
+                        </div>
+                        <div>
+                            <label for="confirmarContraseña" class="form-label" style="font-family: 'Arial', sans-serif; color: #333;">Confirmar Contraseña:</label>
+                            <input type="password" class="form-control" id="confirmarContraseña" placeholder="Confirma tu contraseña">
+                        </div>
+                        <div>
+                            <br>
+                        <button type="submit" class="btn btn-primary" style="font-family: 'Arial', sans-serif; color: #333; text-align: center; padding: 10px 20px;">Enviar</button>
+                        
+                        </div>
 
-    <main class="container mt-4 text-center"></main>
+                        <div>
+                            <br>
+                        <h3 class="mb-3" style="font-family: 'Arial', sans-serif; color: #333;">Nuestros Servicios</h3>
+                        <p style="font-family: 'Arial', sans-serif; color: #555;">Ofrecemos una amplia gama de servicios para el cuidado de tus mascotas, incluyendo peluquería, entrenamiento y consultas veterinarias.</p>
+                        </div>
+                    </form>
+                </article>
 
-    <section class="container mt-4 text-center"></section>
+            </section>
+        </div>
+    </main>
 
-    <article class="container mt-4 text-center"></article>
 
-    <!-- Pie de página -->
-    <footer class="custom-footer mt-5"></footer>
-
-    <!-- Scripts de Bootstrap -->
 </body>
 </html>

@@ -5,7 +5,7 @@
 
 /* Estilos generales del cuerpo */
 body {
-    background-color: #f4f6f8; /* Un fondo ligeramente gris para contrastar con el formulario blanco */
+    background-color: #f4f6f8;
     font-family: 'Arial', sans-serif;
 }
 
@@ -14,15 +14,34 @@ header h1 {
     letter-spacing: 1px;
 }
 
+/* Título de marca (reemplaza estilos en línea repetidos) */
+.brand-title {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Texto descriptivo bajo los títulos */
+.lead-text {
+    font-family: 'Arial', sans-serif;
+    color: #555;
+}
+
+/* Texto de la sección "Nuestros Servicios" */
+.services-text {
+    font-family: 'Arial', sans-serif;
+    color: #555;
+    font-size: 0.9rem;
+}
+
 /* Estilos de la tarjeta principal (Formulario) */
 .card {
     border: 1px solid #ced4da;
-    border-radius: 0px; /* Bordes cuadrados para simular el mockup */
+    border-radius: 0px;
 }
 
 /* Cabecera del formulario "Registro de usuario" */
 .card-header {
-    background-color: #d8d8d8 !important; /* Gris intermedio según el mockup */
+    background-color: #d8d8d8 !important;
     color: #333 !important;
     border-bottom: 1px solid #ced4da;
     padding: 15px;
@@ -40,7 +59,7 @@ header h1 {
 /* Inputs de texto y selectores */
 .form-control, .form-select {
     border-radius: 0px;
-    border: 1px solid #000; /* Borde negro marcado como en el diseño */
+    border: 1px solid #000;
 }
 
 .form-control:focus, .form-select:focus {
@@ -51,7 +70,7 @@ header h1 {
 /* Contenedor dinámico de Registro de Mascotas */
 .mascota-item {
     background-color: #ffffff;
-    border: 2px solid #333 !important; /* Borde oscuro para resaltar el cuadro de la mascota */
+    border: 2px solid #333 !important;
     border-radius: 0px;
     position: relative;
 }
@@ -95,4 +114,121 @@ header h1 {
 .custom-footer {
     font-size: 0.85rem;
     color: #6c757d;
+}
+
+/* =========================================
+   AJUSTES VISUALES ADICIONALES
+   (Solo estética: tipografía, color de acento,
+   sombras y detalles responsive. No se modifica
+   la estructura ni las reglas anteriores.)
+========================================= */
+
+:root {
+    --acento: #e0983c;       /* mostaza cálido - detalle "Guau" */
+    --acento-oscuro: #c67f28;
+    --tinta: #2b2b2b;
+}
+
+body {
+    font-family: 'Poppins', 'Arial', sans-serif;
+}
+
+.brand-title,
+.lead-text,
+.services-text,
+.form-label,
+h1, h2, h3 {
+    font-family: 'Poppins', 'Arial', sans-serif;
+}
+
+.brand-title {
+    font-weight: 700;
+}
+
+/* Cabecera con un degradado sutil en vez de gris plano */
+header.bg-light {
+    background: linear-gradient(180deg, #ffffff 0%, #f4f6f8 100%) !important;
+}
+
+/* Logo con un poco de aire visual */
+header img {
+    filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.12));
+}
+
+/* Línea de acento bajo el header */
+header.border-bottom {
+    border-bottom: 3px solid var(--acento) !important;
+}
+
+/* Profundidad sutil en las tarjetas */
+.card {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* Detalle de color en la cabecera de la tarjeta */
+.card-header {
+    border-top: 3px solid var(--acento);
+}
+
+/* Botones con transición suave y acento en el foco/hover */
+.btn {
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.btn-dark:hover {
+    background-color: var(--tinta);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+}
+
+.btn-outline-dark {
+    color: var(--tinta);
+}
+
+.btn-outline-dark:hover {
+    background-color: var(--acento);
+    border-color: var(--acento);
+    color: #fff;
+    transform: translateY(-1px);
+}
+
+/* Foco accesible con el color de acento en inputs y selects */
+.form-control:focus, .form-select:focus {
+    border-color: var(--acento);
+    box-shadow: 0 0 0 0.2rem rgba(224, 152, 60, 0.25);
+}
+
+/* Foco visible para navegación por teclado */
+a:focus-visible, button:focus-visible {
+    outline: 2px solid var(--acento);
+    outline-offset: 2px;
+}
+
+/* Leve resalte al pasar el cursor sobre un bloque de mascota */
+.mascota-item {
+    transition: box-shadow 0.2s ease;
+}
+
+.mascota-item:hover {
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+/* Mensajes de error con un poco más de peso visual */
+.text-danger.small {
+    font-weight: 500;
+}
+
+/* Ajustes responsive: header no se apretuja en pantallas chicas */
+@media (max-width: 576px) {
+    header .container.d-flex {
+        flex-wrap: wrap;
+        row-gap: 0.75rem;
+        justify-content: center !important;
+        text-align: center;
+    }
+
+    header h1.brand-title {
+        order: -1;
+        width: 100%;
+    }
 }

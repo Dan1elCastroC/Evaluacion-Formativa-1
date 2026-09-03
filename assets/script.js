@@ -132,6 +132,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if(esValido) {
                 alert("Inicio de sesión procesado correctamente.");
+                // Al terminar regresa a la página de inicio o realiza la acción correspondiente
+                window.location.href = "index.html";
             }
         });
     }
